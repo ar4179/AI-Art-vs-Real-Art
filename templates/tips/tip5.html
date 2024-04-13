@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row" id="page-title">
+    <div class="col-12">
+        <h1>AI art has no background information</h1>
+        <h4>Real art always has background information about who the artist is and their intent behind the work. They will also sometimes leave a signature. If you are unsure if a painting is real or AI generated, it is always important to do research.
+        </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='signature/ai_signature.png')}}" alt="ai painting with no signature">
+    </div>
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='signature/signature.png')}}" alt="real painting that has a signature">
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/annotated_tip4" class="btn btn-secondary" role="button">Previous</a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="#" class="btn btn-primary" role="button">Quiz</a>
+      </div>
+    </div>
+{% endblock %}

@@ -3,13 +3,15 @@
 {% block content %}
 <div class="row" id="page-title">
     <div class="col-12">
-        <h1>AI Art is more uniform</h1>
-        <h4>When you look at AI generated art closely, you will see that the pieces lack complex details. In real artwork, artists tend to really focus on including interesting minute details that you may not notice initially.</h4>
+        <h1>AI art is procedural
+        </h1>
+        <h4>Most AI generated art contains little to no brush strokes. In real art, the brush strokes are apparent, and artists make sure to vary these strokes.
+        </h4>
     </div>
 </div>
 <div class="row">
     <div class="col-6 text-center">
-        <img src="{{url_for('static', filename='mountains/red_ai_mountains.png')}}" alt="ai mountains">
+        <img src="{{url_for('static', filename='mountains/red_ai_mountains.png')}}" alt="ai mountains annotated">
     </div>
     <div class="col-6 text-center">
         <img src="{{url_for('static', filename='mountains/red_mountains.png')}}" alt="mountains annotated">
@@ -18,10 +20,10 @@
 
     <div class="row">
       <div class="col-6 text-left">
-        <a href="/tip2" class="btn btn-secondary" role="button">Previous</a>
+        <a href="/tips/2" class="btn btn-secondary" role="button">Previous</a>
       </div>
       <div class="col-6 text-right">
-        <a href="/tip3" class="btn btn-primary" role="button">Next</a>
+        <a href="/tips/3" class="btn btn-primary" role="button">Next</a>
       </div>
     </div>
 {% endblock %}

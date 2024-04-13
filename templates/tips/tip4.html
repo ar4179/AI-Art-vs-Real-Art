@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row" id="page-title">
+    <div class="col-12">
+        <h1>AI art lacks emotion</h1>
+        <h4>Even when you tell an AI to generate its “most emotional image”, the image provided seems shallow and mechanical, as if a robot is trying to replicate emotion. Real art evokes true emotion in the viewer.</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='emotion/ai_emotion.png')}}" alt="ai emotion">
+    </div>
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='emotion/emotion.png')}}" alt="emotion">
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/annotated_tip3" class="btn btn-secondary" role="button">Previous</a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/tips/annotated_tip4" class="btn btn-primary" role="button">Next</a>
+      </div>
+    </div>
+{% endblock %}

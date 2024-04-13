@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row" id="page-title">
+    <div class="col-12">
+        <h1>AI art is simple
+        </h1>
+        <h4>AI generated art cannot generate complex or realistic scenes with human figures. The smaller details are all distorted. In real complex scenery, the finer details are accurately portrayed.
+        </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='town/ai_town.png')}}" alt="ai town">
+    </div>
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='town/town.png')}}" alt="town">
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/annotated_tip2" class="btn btn-secondary" role="button">Previous</a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/tips/annotated_tip3" class="btn btn-primary" role="button">Next</a>
+      </div>
+    </div>
+{% endblock %}
