@@ -1,0 +1,9 @@
+#page-title {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.btn-custom {
+min-width: 150px; /* Set minimum width for buttons */
+margin: 5px; /* Add some margin around buttons */
+}
