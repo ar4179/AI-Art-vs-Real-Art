@@ -16,7 +16,19 @@ def home():
 
 @app.route('/tip1')
 def tip1():
-   return render_template('tip1.html')
+   return render_template('tips/tip1.html')
+
+@app.route('/annotated_tip1')
+def red_tip1():
+   return render_template('red_tips/red_tip1.html')
+
+@app.route('/tip2')
+def tip2():
+   return render_template('tips/tip2.html')
+
+@app.route('/annotated_tip2')
+def red_tip2():
+   return render_template('red_tips/red_tip2.html')
 
 if __name__ == '__main__':
    app.run(debug = True)

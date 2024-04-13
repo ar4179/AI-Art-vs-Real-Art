@@ -9,19 +9,19 @@
 </div>
 <div class="row">
     <div class="col-6 text-center">
-        <img src="{{url_for('static', filename='ai_art/ai_starry_night.png')}}" alt="ai starry night">
+        <img src="{{url_for('static', filename='starry_night/red_ai_starry_night.png')}}" alt="ai starry night annotated">
     </div>
     <div class="col-6 text-center">
-        <img src="{{url_for('static', filename='real_art/starry_night.png')}}" alt="ai starry night">
+        <img src="{{url_for('static', filename='starry_night/red_starry_night.png')}}" alt="starry night annotated">
     </div>
 </div>
 
     <div class="row">
       <div class="col-6 text-left">
-        <button type="button" class="btn btn-secondary">Previous</button>
+        <a href="/tip1" class="btn btn-secondary" role="button">Previous</a>
       </div>
       <div class="col-6 text-right">
-        <button type="button" class="btn btn-primary">Next</button>
+        <a href="/tip2" class="btn btn-primary" role="button">Next</a>
       </div>
     </div>
 {% endblock %}
