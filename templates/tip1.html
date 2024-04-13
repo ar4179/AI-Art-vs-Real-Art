@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row" id="page-title">
+    <div class="col-12">
+        <h1>AI Art is more uniform</h1>
+        <h4>When you look at AI generated art closely, you will see that the pieces lack complex details. In real artwork, artists tend to really focus on including interesting minute details that you may not notice initially.</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='ai_art/ai_starry_night.png')}}" alt="ai starry night">
+    </div>
+    <div class="col-6 text-center">
+        <img src="{{url_for('static', filename='real_art/starry_night.png')}}" alt="ai starry night">
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <button type="button" class="btn btn-secondary">Previous</button>
+      </div>
+      <div class="col-6 text-right">
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+{% endblock %}

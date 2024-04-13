@@ -14,6 +14,10 @@ def hello(name):
 def home():
    return render_template('homepage.html')
 
+@app.route('/tip1')
+def tip1():
+   return render_template('tip1.html')
+
 if __name__ == '__main__':
    app.run(debug = True)
 

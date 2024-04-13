@@ -1,9 +1,14 @@
 #page-title {
-    margin-top: 25%;
+    margin-top: 20%;
     text-align: center;
 }
 
 .btn-custom {
-min-width: 150px; /* Set minimum width for buttons */
-margin: 5px; /* Add some margin around buttons */
+    min-width: 150px; /* Set minimum width for buttons */
+    margin: 5px; /* Add some margin around buttons */
+}
+
+img {
+    max-height: 400px; /* Set minimum width for buttons */
+    margin: 20px; /* Add some margin around buttons */       
 }
