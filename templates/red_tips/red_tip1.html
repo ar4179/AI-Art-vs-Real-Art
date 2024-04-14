@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'red_tip1.js') }}"></script>
+
 <div class="row" id="page-title">
     <div class="col-12">
         <h1>AI Art is more uniform</h1>
@@ -8,11 +11,13 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-6 text-center">
-        <img src="{{url_for('static', filename='starry_night/red_ai_starry_night.png')}}" alt="ai starry night annotated">
+    <div class="col-6 text-center image-container">
+        <img id="img1" src="{{url_for('static', filename='starry_night/red_ai_starry_night.png')}}" alt="ai starry night annotated">
+        <div id="zoom-result1" class="img-zoom-result" style="position: absolute;"></div>
     </div>
-    <div class="col-6 text-center">
-        <img src="{{url_for('static', filename='starry_night/red_starry_night.png')}}" alt="starry night annotated">
+    <div class="col-6 text-center image-container">
+        <img id="img2" src="{{url_for('static', filename='starry_night/red_starry_night.png')}}" alt="starry night annotated">
+        <div id="zoom-result2" class="img-zoom-result" style="position: absolute;"></div>
     </div>
 </div>
 

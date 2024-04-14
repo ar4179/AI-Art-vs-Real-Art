@@ -1,6 +1,10 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'red_tip4.js') }}"></script>
+
+
 <div class="row" id="page-title">
     <div class="col-12">
         <h1>AI art lacks emotion</h1>
@@ -8,11 +12,13 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-6 text-center">
-        <img src="{{url_for('static', filename='emotion/red_ai_emotion.png')}}" alt="ai emotion annotated">
+    <div class="col-6 text-center image-container">
+        <img id="img1" src="{{url_for('static', filename='emotion/red_ai_emotion.png')}}" alt="ai emotion annotated">
+        <div id="zoom-result1" class="img-zoom-result" style="position: absolute;"></div>
     </div>
     <div class="col-6 text-center">
-        <img src="{{url_for('static', filename='emotion/red_emotion.png')}}" alt="emotion annotated">
+        <img id="img2" src="{{url_for('static', filename='emotion/red_emotion.png')}}" alt="emotion annotated">
+        <div id="zoom-result2" class="img-zoom-result" style="position: absolute;"></div>
     </div>
 </div>
 
