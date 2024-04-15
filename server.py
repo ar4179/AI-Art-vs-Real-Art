@@ -50,6 +50,13 @@ def red_tip4():
 def tip5():
    return render_template('tips/tip5.html')
 
+@app.route('/quiz/start')
+def start_quiz():
+   return render_template('quiz/start_quiz.html')
+
+@app.route('/quiz/<int:number>')
+def quiz(number):
+   return render_template('quiz/quiz{number}.html')
 
 if __name__ == '__main__':
    app.run(debug = True, port=4444)
