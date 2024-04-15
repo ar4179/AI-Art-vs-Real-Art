@@ -2,8 +2,16 @@ from flask import Flask
 from flask import render_template
 from flask import Response, request
 from markupsafe import escape
+import json
 
 app = Flask(__name__)
+
+
+def read_data():
+   with open('static/quiz_pictures.json', 'r') as file:
+      return json.load(file)
+   
+quiz_data = read_data()
 
 # to protect from injection attacks
 @app.route("/<name>")
@@ -54,9 +62,21 @@ def tip5():
 def start_quiz():
    return render_template('quiz/start_quiz.html')
 
-@app.route('/quiz/<int:number>')
-def quiz(number):
-   return render_template('quiz/quiz{number}.html')
+@app.route('/quiz/<number>')
+def quiz(number=None):
+   index = int(number) - 1
+   return render_template('quiz/quiz.html', file=quiz_data[index])
+
+@app.route('/quiz/<number>/correct')
+def correct_quiz(number=None):
+   index = int(number) - 1
+   return render_template('quiz/correct_quiz.html', file=quiz_data[index])
+
+@app.route('/quiz/<number>/incorrect')
+def incorrect_quiz(number=None):
+   index = int(number) - 1
+   return render_template('quiz/incorrect_quiz.html', file=quiz_data[index])
+
 
 if __name__ == '__main__':
    app.run(debug = True, port=4444)

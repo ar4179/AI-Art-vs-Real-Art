@@ -1,10 +1,42 @@
 [
     {
+        "id": 1,
         "url": "https://afremov.com/media/catalog/product/COLORFUL-NIGHT.jpg",
-        "ai": false
-    }
-
+        "ai": false,
+        "name": "Color Night",
+        "artist": "Leonid Afremov",
+        "analysis": "The texture of the piece is too rough and varied to be AI"
+    },
     {
-        "url": 
+        "id": 2,
+        "url": "https://lh3.googleusercontent.com/keep-bbsk/AFgXFlJS4qnY5j-Js6m_TtpyclhiT_DsWpMaPVvXSCGdWAr5iuLl59fm3pZ7iQDxeZAv6JrdS4Jgea5LQU5M7w0ITlaZVgCF3l6BiIlnykycVz093nBj-MYrqg=s512",
+        "ai": true,
+        "name": "N/A",
+        "artist": "N/A",
+        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works."
+    },
+    {
+        "id": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Georges_de_La_Tour_-_Magdalen_of_Night_Light_-_WGA12337.jpg",
+        "ai": false,
+        "name": "Magdalene with the Smoking Flame",
+        "artist": "Georges de La Tour",
+        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works."
+    },
+    {
+        "id": 4,
+        "url": "",
+        "ai": true,
+        "name": "N/A",
+        "artist": "N/A",
+        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works."
+    },
+    {
+        "id": 5,
+        "url": "",
+        "ai": true,
+        "name": "N/A",
+        "artist": "N/A",
+        "analysis": "This one is particularly difficult to classify, emulating East Asian landscape paintings quite well. However, if we focus in on the leaves of the tree in the foreground, you will notice a smoothness to the texture and a lack of variation in the brushstrokes."
     }
 ]
