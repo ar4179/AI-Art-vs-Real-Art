@@ -38,3 +38,20 @@ img {
     opacity: 0.4;
     background-color: white;
 }
+
+.clicked-correct {
+    pointer-events: none;
+    background-color: rgb(158, 194, 132);
+    border: none;
+}
+
+.clicked-incorrect {
+    pointer-events: none;
+    background: rgb(204, 118, 115);
+    border: none;
+}
+
+.non-clicked {
+    pointer-events: none;
+    background-color: rgb(110, 117, 124);
+}

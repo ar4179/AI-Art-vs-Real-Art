@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "url": "https://afremov.com/media/catalog/product/COLORFUL-NIGHT.jpg",
+        "ai": false,
+        "name": "Color Night",
+        "artist": "Leonid Afremov",
+        "analysis": "The texture of the piece is too rough and varied to be AI",
+        "description": "Bright and colorful trees in a park, surrounding a park bench."
+    },
+    {
+        "id": 2,
+        "url": "/static/quiz-pictures/quiz-picture-sunflowers.png",
+        "ai": true,
+        "name": "N/A",
+        "artist": "N/A",
+        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works.",
+        "description": "Bright yellow sunflowers painted in a pot"
+    },
+    {
+        "id": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Georges_de_La_Tour_-_Magdalen_of_Night_Light_-_WGA12337.jpg",
+        "ai": false,
+        "name": "Magdalene with the Smoking Flame",
+        "artist": "Georges de La Tour",
+        "analysis": "There are small, less noticeable details, along with variations in the brushwork.",
+        "description": "Picture of a woman sitting alone in the dark"
+    },
+    {
+        "id": 4,
+        "url": "/static/quiz-pictures/quiz-picture-flowers.png",
+        "ai": true,
+        "name": "N/A",
+        "artist": "N/A",
+        "analysis": "While it may seem initially that the piece is quite complex and detailed, if you look closely at the individual elements, you can see how the same element is repeated over and over all over the piece.",
+        "description": "Picture of a bouquet of flowers"
+    },
+    {
+        "id": 5,
+        "url": "/static/quiz-pictures/quiz-picture-chinese.png",
+        "ai": true,
+        "name": "N/A",
+        "artist": "N/A",
+        "analysis": "This one is particularly difficult to classify, emulating East Asian landscape painting quite well. However, if we focus in on the leaves of the tree in the foreground, you will notice a smoothness to the texture and a lack of variation in the brushstrokes.",
+        "description": "Picture of the bank of a lake covered by trees"
+    }
+]
