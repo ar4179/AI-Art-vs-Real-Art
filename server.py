@@ -65,7 +65,10 @@ def start_quiz():
 @app.route('/quiz/<number>')
 def quiz(number=None):
    index = int(number) - 1
-   return render_template('quiz/quiz.html', file=quiz_data[index])
+   if 0 <= index < len(quiz_data):
+      return render_template('quiz/quiz.html', file=quiz_data[index])
+   else:
+      return render_template('quiz/quiz-complete.html')
 
 @app.route('/quiz/<number>/correct')
 def correct_quiz(number=None):
