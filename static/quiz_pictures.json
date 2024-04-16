@@ -5,15 +5,17 @@
         "ai": false,
         "name": "Color Night",
         "artist": "Leonid Afremov",
-        "analysis": "The texture of the piece is too rough and varied to be AI"
+        "analysis": "The texture of the piece is too rough and varied to be AI",
+        "description": "Bright and colorful trees in a park, surrounding a park bench."
     },
     {
         "id": 2,
-        "url": "https://lh3.googleusercontent.com/keep-bbsk/AFgXFlJS4qnY5j-Js6m_TtpyclhiT_DsWpMaPVvXSCGdWAr5iuLl59fm3pZ7iQDxeZAv6JrdS4Jgea5LQU5M7w0ITlaZVgCF3l6BiIlnykycVz093nBj-MYrqg=s512",
+        "url": "/static/quiz-pictures/quiz-picture-sunflowers.png",
         "ai": true,
         "name": "N/A",
         "artist": "N/A",
-        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works."
+        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works.",
+        "description": "Bright yellow sunflowers painted in a pot"
     },
     {
         "id": 3,
@@ -21,22 +23,25 @@
         "ai": false,
         "name": "Magdalene with the Smoking Flame",
         "artist": "Georges de La Tour",
-        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works."
+        "analysis": "There are small, less noticeable details, along with variations in the brushwork.",
+        "description": "Picture of a woman sitting alone in the dark"
     },
     {
         "id": 4,
-        "url": "",
+        "url": "/static/quiz-pictures/quiz-picture-flowers.png",
         "ai": true,
         "name": "N/A",
         "artist": "N/A",
-        "analysis": "Certain patterns are repeated too perfectly, lacking the natural variation found in hand-painted works."
+        "analysis": "While it may seem initially that the piece is quite complex and detailed, if you look closely at the individual elements, you can see how the same element is repeated over and over all over the piece.",
+        "description": "Picture of a bouquet of flowers"
     },
     {
         "id": 5,
-        "url": "",
+        "url": "/static/quiz-pictures/quiz-picture-chinese.png",
         "ai": true,
         "name": "N/A",
         "artist": "N/A",
-        "analysis": "This one is particularly difficult to classify, emulating East Asian landscape paintings quite well. However, if we focus in on the leaves of the tree in the foreground, you will notice a smoothness to the texture and a lack of variation in the brushstrokes."
+        "analysis": "This one is particularly difficult to classify, emulating East Asian landscape painting quite well. However, if we focus in on the leaves of the tree in the foreground, you will notice a smoothness to the texture and a lack of variation in the brushstrokes.",
+        "description": "Picture of the bank of a lake covered by trees"
     }
 ]

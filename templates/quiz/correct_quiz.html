@@ -1,7 +1,49 @@
 {% extends "layout.html" %}
 
 {% block content %}
-correct quiz.
+<div class="row">
+    <div class="col-12">
+        {% if file.ai %}
+            <h1>Correct! This image is AI-generated.</h1>
+        {% else %}
+            <h1>Correct! This image is made by humans.</h1>
+        {% endif %}
+        <div class="row">
+            <div class="col-6">
+                <img src = {{file.url}} alt="{{file.description}}" class="img-fluid">
+            </div>
+            <div class="col-6">
+                {% if file.ai %}
+                    <h3>How do we know this is AI-generated? {{file.analysis}}</h4>
+                {% else %}
+                    <h3>This is {{file.name}} by {{file.artist}}</h4>
+                    <h3>How do we know this is human-generated? {{file.analysis}}</h4>
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-6">
+        {% if file.ai %}
+            <a href="/quiz/{{file.id}}/correct" class="btn btn-secondary" role="button">AI-Generated</a>
+        {% else %}
+            <a href="/quiz/{{file.id}}/incorrect" class="btn btn-secondary" role="button">AI-Generated</a>
+        {% endif %}
+    </div>
+    <div class="col-6">
+        {% if file.ai %}
+            <a href="/quiz/{{file.id}}/incorrect" class="btn btn-secondary" role="button">Human-Generated</a>
+        {% else %}
+            <a href="/quiz/{{file.id}}/correct" class="btn btn-secondary" role="button">Human-Generated</a>
+        {% endif %}
+    </div>
+</div>
+
+<div class="row">
+    <a href="/quiz/{{file.id + 1}}" class="btn btn-primary" role="button">Next Question!</a>
+</div>
 
 {% endblock %}

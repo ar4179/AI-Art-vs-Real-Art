@@ -1,7 +1,28 @@
 {% extends "layout.html" %}
 
 {% block content %}
-{{file.name}}
+<div class="row">
+    <div class="col-12">
+        <h1>Is the following artwork AI generated or real?</h1>
+        <img src = {{file.url}} alt="{{file.description}}" class="img-fluid">
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-6">
+        {% if file.ai %}
+            <a href="/quiz/{{file.id}}/correct" class="btn btn-secondary" role="button">AI-Generated</a>
+        {% else %}
+            <a href="/quiz/{{file.id}}/incorrect" class="btn btn-secondary" role="button">AI-Generated</a>
+        {% endif %}
+    </div>
+    <div class="col-6">
+        {% if file.ai %}
+            <a href="/quiz/{{file.id}}/incorrect" class="btn btn-secondary" role="button">Human-Generated</a>
+        {% else %}
+            <a href="/quiz/{{file.id}}/correct" class="btn btn-secondary" role="button">Human-Generated</a>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock %}
