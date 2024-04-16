@@ -6,12 +6,13 @@ import json
 
 app = Flask(__name__)
 
-
 def read_data():
    with open('static/quiz_pictures.json', 'r') as file:
       return json.load(file)
    
 quiz_data = read_data()
+quiz_score = 0
+quiz_total = len(quiz_data)
 
 # to protect from injection attacks
 @app.route("/<name>")
@@ -60,6 +61,8 @@ def tip5():
 
 @app.route('/quiz/start')
 def start_quiz():
+   global quiz_score
+   quiz_score = 0
    return render_template('quiz/start_quiz.html')
 
 @app.route('/quiz/<number>')
@@ -68,10 +71,12 @@ def quiz(number=None):
    if 0 <= index < len(quiz_data):
       return render_template('quiz/quiz.html', file=quiz_data[index])
    else:
-      return render_template('quiz/quiz-complete.html')
+      return render_template('quiz/quiz-complete.html', score=quiz_score, total=quiz_total)
 
 @app.route('/quiz/<number>/correct')
 def correct_quiz(number=None):
+   global quiz_score
+   quiz_score = quiz_score + 1
    index = int(number) - 1
    return render_template('quiz/correct_quiz.html', file=quiz_data[index])
 
