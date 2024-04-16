@@ -1,10 +1,33 @@
 from flask import Flask
 from flask import render_template
 from flask import Response, request
+from flask import jsonify
+import threading
 from markupsafe import escape
 import json
 
 app = Flask(__name__)
+
+# Thread-safe dictionary to store the durations
+user_durations = threading.Lock()
+page_times = {}
+
+@app.route('/update_time', methods=['POST'])
+def update_time():
+   if request.method == 'POST':
+      data = request.get_json()
+      
+      page = data['page']
+      duration = data['duration']
+
+      with user_durations:
+         if page in page_times:
+            page_times[page] += duration
+         else:
+            page_times[page] = duration
+
+      print(page_times)
+      return jsonify({"status": "success", "updated_time": page_times[page]})
 
 def read_data():
    with open('static/quiz_pictures.json', 'r') as file:
