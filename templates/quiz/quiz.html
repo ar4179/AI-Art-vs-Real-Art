@@ -1,10 +1,14 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'quiz.js') }}"></script>
+
 <div class="row">
     <div class="col-12">
         <h1>Is the following artwork AI generated or real?</h1>
-        <img src = {{file.url}} alt="{{file.description}}" class="img-fluid">
+        <img id="img1" src = {{file.url}} alt="{{file.description}}" class="img-fluid">
+        <div id="zoom-result1" class="img-zoom-result" style="position: absolute;"></div>
     </div>
 </div>
 
