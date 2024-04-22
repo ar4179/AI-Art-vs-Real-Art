@@ -8,6 +8,14 @@ import json
 
 app = Flask(__name__)
 
+# used for changing color of the link corresponding to current page in navbar
+def is_active(path):
+    return 'active' if request.path == path else ''
+
+@app.context_processor
+def context_processor():
+    return dict(is_active=is_active)
+
 # Thread-safe dictionary to store the durations
 user_durations = threading.Lock()
 page_times = {}

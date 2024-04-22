@@ -1,15 +1,18 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="row" id="page-title">
+<div class="row" id="homepage-title">
     <div class="col-12">
-        <h1>AI-Generated Art vs Real Art</h1>
+        <div id="homepage-main-title">AI-Generated Art vs. Real Art
+        </div>
+        <div id="homepage-main-subtitle">How can you tell the difference?
+        </div>
     </div>
 </div>
 <div class="row">
     <div class="col text-center">
-        <a href="/tips/1" class="btn btn-primary btn-custom" role="button">Start Learning</a>
-        <a href="/quiz/start" class="btn btn-secondary btn-custom" role="button">Take the Quiz</a>
+        <a href="/tips/1"><button id="start-learning-button">Start Learning!</button></a>
+        <a href="/quiz/start"><button id="take-quiz-button">Take the Quiz</button></a>
     </div>
 </div>
 {% endblock %}

@@ -1,3 +1,63 @@
+body {
+    font-family: century-gothic, sans-serif;
+    background-color: rgb(235,235,235);
+  }
+
+#navigationBar {
+    background-color: rgb(41,43,57);
+    color: white;
+}
+
+.nav-item.nav-link.active {
+    color: rgb(246,70,65) !important;  /* Change the color as needed */
+}
+
+#homepage-title {
+    margin-top: 20%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#homepage-main-title {
+    color: rgb(246,70,65);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#homepage-main-subtitle {
+    font-size: 20px;
+}
+
+#start-learning-button {
+    border: none;
+    color: white;
+    background-color: rgb(218,24,70);
+    padding: 40px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 2%;
+    cursor: pointer;
+    border-radius: 25px; /* Makes the corners rounded */
+    transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+}
+
+#take-quiz-button {
+    border: none;
+    color: white;
+    background-color: rgb(41,43,57);
+    padding: 40px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 2%;
+    cursor: pointer;
+    border-radius: 25px; /* Makes the corners rounded */
+    transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+}
+
 #page-title {
     margin-top: 20px;
     margin-bottom: 5px;

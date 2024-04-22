@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
   
     <script src="https://cdn.jsdelivr.net/npm/@fat/zoom.js"></script>
 
@@ -24,18 +26,16 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigationBar">
+<nav class="navbar navbar-expand-lg navbar-dark" id="navigationBar">
   <div class="container">
-    <a class="navbar-brand" href="/">AI Art vs REAL Art</a>
+    <a class="navbar-brand" href="/">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Lesson</a>
-      </div>
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Quiz</a>
+        <a class="nav-item nav-link {{ is_active('/tips/1') }}" href="/tips/1">Lesson</a>
+        <a class="nav-item nav-link {{ is_active('/quiz/start') }}" href="/quiz/start">Quiz</a>
       </div>
     </div>
 
