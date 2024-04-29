@@ -10,7 +10,10 @@ app = Flask(__name__)
 
 # used for changing color of the link corresponding to current page in navbar
 def is_active(path):
-    return 'active' if request.path == path else ''
+    if request.path.startswith(path):
+       return 'active' 
+    else: 
+       ''
 
 @app.context_processor
 def context_processor():
@@ -50,7 +53,7 @@ quiz_total = len(quiz_data)
 def hello(name):
     return f"Hello, {escape(name)}!"
 
-@app.route('/')
+@app.route('/home')
 def home():
    return render_template('homepage.html')
 

@@ -12,6 +12,10 @@ body {
     color: rgb(246,70,65) !important;  /* Change the color as needed */
 }
 
+.nav-brand.nav-link.active {
+    color: rgb(246,70,65) !important;  /* Change the color as needed */
+}
+
 #homepage-title {
     margin-top: 20%;
     margin-bottom: 3%;
