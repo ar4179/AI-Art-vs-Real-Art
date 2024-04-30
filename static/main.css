@@ -73,7 +73,7 @@ b {
     font-size: 20px;
 }
 
-#start-learning-button {
+.highlighted-button {
     border: none;
     color: white;
     background-color: rgb(218,24,70);
@@ -88,7 +88,7 @@ b {
     transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
 }
 
-#take-quiz-button {
+.muted-button {
     border: none;
     color: white;
     background-color: rgb(41,43,57);
