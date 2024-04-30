@@ -5,7 +5,7 @@
         "ai": false,
         "name": "Color Night",
         "artist": "Leonid Afremov",
-        "analysis": "The texture of the piece is too rough and varied to be AI",
+        "analysis": "The texture of the piece is too rough and varied to be AI.",
         "description": "Bright and colorful trees in a park, surrounding a park bench."
     },
     {
@@ -43,5 +43,23 @@
         "artist": "N/A",
         "analysis": "This one is particularly difficult to classify, emulating East Asian landscape painting quite well. However, if we focus in on the leaves of the tree in the foreground, you will notice a smoothness to the texture and a lack of variation in the brushstrokes.",
         "description": "Picture of the bank of a lake covered by trees"
+    },
+    {
+        "id": 6,
+        "url": "https://dataviz.nbcnews.com/projects/20221208-guess-ai-or-human-art-quiz/assets/01-couple.jpg",
+        "ai": false,
+        "name": "a generic photograph",
+        "artist": "a Getty Images Photographer",
+        "analysis": "This image is also pretty difficult to classify, as the lack of proper lighting drowns out the details that you would usually look at to identify AI art. However, the emotion captured and how subtle yet anatomically correct the hands and facial features are are good clues that this is a real picture taken by a human",
+        "description": "Picture of couple in dim moonlight"
+    },
+    {
+        "id": 7,
+        "url": "https://dataviz.nbcnews.com/projects/20221208-guess-ai-or-human-art-quiz/assets/02-spaghetti.jpg",
+        "ai": true,
+        "name": "N/A",
+        "artist": "N/A",
+        "analysis": "There’s also something about the shadows and the wooden surface that may be a tipoff for some people. Pay special attention to how the noodles overlap and how repetitive each individual noodle looks, as well as how neatly organized they are on the plate",
+        "description": "Picture of plate of spaghetti with tomato sauce"
     }
 ]

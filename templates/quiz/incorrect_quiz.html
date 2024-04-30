@@ -14,10 +14,10 @@
             </div>
             <div class="col-6">
                 {% if file.ai %}
-                    <h3>How do we know this is AI-generated? {{file.analysis}}</h4>
+                    <h3> <b> How do we know this is AI-generated? </b> {{file.analysis}}</h4>
                 {% else %}    
                     <h3>This is {{file.name}} by {{file.artist}}</h4>
-                    <h3>How do we know this is human-generated? {{file.analysis}}</h4>
+                    <h3> <b> How do we know this is human-generated? </b> {{file.analysis}}</h4>
                 {% endif %}
                 
             </div>

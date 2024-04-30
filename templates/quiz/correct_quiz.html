@@ -16,7 +16,8 @@
                 {% if file.ai %}
                     <h3>How do we know this is AI-generated? {{file.analysis}}</h4>
                 {% else %}
-                    <h3>This is {{file.name}} by {{file.artist}}</h4>
+                    <h3>This is <b> {{file.name}} </b> by {{file.artist}}</h4>
+                    <br>
                     <h3>How do we know this is human-generated? {{file.analysis}}</h4>
                 {% endif %}
                 
