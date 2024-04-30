@@ -47,6 +47,13 @@ $(document).ready(function () {
         }
     }
 
+    $('.correct-btn').click(function() {
+        $.post('/increment_score', function(data) {
+            // Update UI with the new score
+            $('#score').text(data.score);
+        });
+    });
+
     imageZoom("img1", "zoom-result1");
     imageZoom("img2", "zoom-result2");
 })

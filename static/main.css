@@ -85,7 +85,11 @@ b {
     margin-right: 2%;
     cursor: pointer;
     border-radius: 25px; /* Makes the corners rounded */
-    transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+    transition-duration: 0.2s; /* Smooth transition for mouse hover effect */
+}
+
+.highlighted-button:hover {
+    background-color: rgb(231, 114, 130); /* Change the background color to a paler red */
 }
 
 .muted-button {
@@ -100,7 +104,12 @@ b {
     margin-left: 2%;
     cursor: pointer;
     border-radius: 25px; /* Makes the corners rounded */
-    transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+    transition-duration: 0.2s; /* Smooth transition for mouse hover effect */
+}
+
+.muted-button:hover {
+    background-color: rgb(160, 165, 194);
+    color: black
 }
 
 #page-title {
@@ -144,6 +153,25 @@ img {
     background-color: white;
 }
 
+.quiz-header {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-align: center;
+    display: block;
+    font-size: 2.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.quiz-image {
+    text-align: center;
+}
+
+.quiz-results-image {
+    text-align: right;
+}
+
 .clicked-correct {
     pointer-events: none;
     background-color: rgb(158, 194, 132);
@@ -154,6 +182,12 @@ img {
     pointer-events: none;
     background: rgb(204, 118, 115);
     border: none;
+}
+
+.quiz-button-margin{
+    min-width: 150px; 
+    margin: 5px; 
+    margin-top: 9px;
 }
 
 .non-clicked {

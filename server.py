@@ -109,12 +109,14 @@ def quiz(number=None):
    if 0 <= index < len(quiz_data):
       return render_template('quiz/quiz.html', file=quiz_data[index])
    else:
-      return render_template('quiz/quiz-complete.html', score=quiz_score, total=quiz_total)
+      return redirect(url_for('finish_quiz'))
+
+@app.route('/quiz/finish')
+def finish_quiz():
+   return render_template('quiz/quiz-complete.html', score=quiz_score, total=quiz_total)
 
 @app.route('/quiz/<number>/correct')
 def correct_quiz(number=None):
-   global quiz_score
-   quiz_score = quiz_score + 1
    index = int(number) - 1
    return render_template('quiz/correct_quiz.html', file=quiz_data[index])
 
@@ -123,6 +125,10 @@ def incorrect_quiz(number=None):
    index = int(number) - 1
    return render_template('quiz/incorrect_quiz.html', file=quiz_data[index])
 
+@app.route('/increment_score', methods=['POST'])
+def increment_score():
+    global quiz_score
+    quiz_score += 1
 
 if __name__ == '__main__':
    app.run(debug = True, port=4444)
