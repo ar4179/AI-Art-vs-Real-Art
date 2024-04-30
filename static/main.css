@@ -1,7 +1,41 @@
 body {
     font-family: century-gothic, sans-serif;
     background-color: rgb(235,235,235);
-  }
+}
+
+b {
+    color: rgb(218,24,70);
+}
+
+.next-lesson-button {
+    border: none;
+    color: white;
+    background-color: rgb(218,24,70);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 2%;
+    cursor: pointer;
+    border-radius: 8px; /* Makes the corners rounded */
+    transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+}
+
+.prev-lesson-button {
+    border: none;
+    color: white;
+    background-color: rgb(41,43,57);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 2%;
+    cursor: pointer;
+    border-radius: 8px; /* Makes the corners rounded */
+    transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+}
 
 #navigationBar {
     background-color: rgb(41,43,57);
@@ -26,6 +60,13 @@ body {
     color: rgb(246,70,65);
     font-size: 60px;
     font-weight: bolder;
+}
+
+.lesson-main-title {
+    color: rgb(246,70,65);
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
 }
 
 #homepage-main-subtitle {
@@ -63,8 +104,8 @@ body {
 }
 
 #page-title {
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 8%;
+    margin-bottom: 2%;
     text-align: center;
 }
 
