@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template
+from flask import render_template, redirect, url_for
 from flask import Response, request
 from flask import jsonify
 import threading
@@ -51,11 +51,15 @@ quiz_total = len(quiz_data)
 # to protect from injection attacks
 @app.route("/<name>")
 def hello(name):
-    return f"Hello, {escape(name)}!"
+   return f"Hello, {escape(name)}!"
 
 @app.route('/home')
 def home():
    return render_template('homepage.html')
+
+@app.route('/')
+def root():
+    return redirect(url_for('home'))
 
 @app.route('/tips/1')
 def tip1():
