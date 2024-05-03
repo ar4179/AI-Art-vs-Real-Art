@@ -61,41 +61,77 @@ def home():
 def root():
     return redirect(url_for('home'))
 
-@app.route('/tips/1')
-def tip1():
-   return render_template('tips/tip1.html')
+@app.route('/tips/1_1')
+def tip1_1():
+   return render_template('tips/tip1_1.html')
 
-@app.route('/tips/annotated_tip1')
-def red_tip1():
-   return render_template('red_tips/red_tip1.html')
+@app.route('/tips/annotated_tip1_1')
+def red_tip1_1():
+   return render_template('red_tips/red_tip1_1.html')
 
-@app.route('/tips/2')
-def tip2():
-   return render_template('tips/tip2.html')
+@app.route('/tips/1_2')
+def tip1_2():
+   return render_template('tips/tip1_2.html')
 
-@app.route('/tips/annotated_tip2')
-def red_tip2():
-   return render_template('red_tips/red_tip2.html')
+@app.route('/tips/annotated_tip1_2')
+def red_tip1_2():
+   return render_template('red_tips/red_tip1_2.html')
 
-@app.route('/tips/3')
-def tip3():
-   return render_template('tips/tip3.html')
+@app.route('/tips/2_1')
+def tip2_1():
+   return render_template('tips/tip2_1.html')
 
-@app.route('/tips/annotated_tip3')
-def red_tip3():
-   return render_template('red_tips/red_tip3.html')
+@app.route('/tips/annotated_tip2_1')
+def red_tip2_1():
+   return render_template('red_tips/red_tip2_1.html')
 
-@app.route('/tips/4')
-def tip4():
-   return render_template('tips/tip4.html')
+@app.route('/tips/2_2')
+def tip2_2():
+   return render_template('tips/tip2_2.html')
 
-@app.route('/tips/annotated_tip4')
-def red_tip4():
-   return render_template('red_tips/red_tip4.html')
+@app.route('/tips/annotated_tip2_2')
+def red_tip2_2():
+   return render_template('red_tips/red_tip2_2.html')
 
-@app.route('/tips/5')
-def tip5():
-   return render_template('tips/tip5.html')
+@app.route('/tips/3_1')
+def tip3_1():
+   return render_template('tips/tip3_1.html')
+
+@app.route('/tips/annotated_tip3_1')
+def red_tip3_1():
+   return render_template('red_tips/red_tip3_1.html')
+
+@app.route('/tips/3_2')
+def tip3_2():
+   return render_template('tips/tip3_2.html')
+
+@app.route('/tips/annotated_tip3_2')
+def red_tip3_2():
+   return render_template('red_tips/red_tip3_2.html')
+
+@app.route('/tips/4_1')
+def tip4_1():
+   return render_template('tips/tip4_1.html')
+
+@app.route('/tips/annotated_tip4_1')
+def red_tip4_1():
+   return render_template('red_tips/red_tip4_1.html')
+
+@app.route('/tips/4_2')
+def tip4_2():
+   return render_template('tips/tip4_2.html')
+
+@app.route('/tips/annotated_tip4_2')
+def red_tip4_2():
+   return render_template('red_tips/red_tip4_2.html')
+
+@app.route('/tips/5_1')
+def tip5_1():
+   return render_template('tips/tip5_1.html')
+
+@app.route('/tips/5_2')
+def tip5_2():
+   return render_template('tips/tip5_2.html')
 
 @app.route('/quiz/start')
 def start_quiz():

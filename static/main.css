@@ -20,6 +20,8 @@ b {
     cursor: pointer;
     border-radius: 8px; /* Makes the corners rounded */
     transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 .prev-lesson-button {
@@ -35,6 +37,8 @@ b {
     cursor: pointer;
     border-radius: 8px; /* Makes the corners rounded */
     transition-duration: 0.4s; /* Smooth transition for mouse hover effect */
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 #navigationBar {
@@ -124,10 +128,11 @@ b {
 }
 
 img {
+    position: relative;
     max-height: 400px; /* Set minimum width for buttons */
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;       
+    margin-right: 20px;
 }
 
 .image-container {
@@ -141,6 +146,8 @@ img {
     height: 200px;
     overflow: hidden;
     display: none;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .img-zoom-lens {
@@ -151,6 +158,7 @@ img {
     visibility: hidden;
     opacity: 0.4;
     background-color: white;
+    z-index: 10;
 }
 
 .quiz-header {

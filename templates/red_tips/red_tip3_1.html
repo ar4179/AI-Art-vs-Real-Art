@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'red_tip3_1.js') }}"></script>
+
+<div class="row" id="page-title">
+    <div class="col-12">
+      <div class="lesson-main-title">AI art is simple
+      </div>
+      <h4>AI generated art cannot generate complex or realistic scenes with <b>human figures</b>. The smaller details are all <b>distorted</b>. In real complex scenery, the finer details are accurately portrayed.
+      </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center image-container">
+        <h4>AI-Generated</h4>
+        <img id="img1" src="{{url_for('static', filename='town/red_ai_town.png')}}" alt="ai town annotated">
+        <div id="zoom-result1" class="img-zoom-result" style="position: absolute;"></div>
+    </div>
+    <div class="col-6 text-center image-container">
+        <h4>Real</h4>
+        <img id="img2" src="{{url_for('static', filename='town/red_town.png')}}" alt="town annotated">
+        <div id="zoom-result2" class="img-zoom-result" style="position: absolute;"></div>
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/3_1"><button class="prev-lesson-button">Previous</button></a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/tips/3_2"><button class="next-lesson-button">Next</button></a>
+      </div>
+    </div>
+{% endblock %}

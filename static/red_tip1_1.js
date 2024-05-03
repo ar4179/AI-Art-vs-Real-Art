@@ -57,12 +57,10 @@ $(document).ready(function () {
 
         lens.add(img).mouseout(function() {
             result.hide();
-            lens.hide();
         });
 
         lens.add(img).mouseover(function() {
             result.show();
-            lens.show();
         });
 
         function moveLens(e) {

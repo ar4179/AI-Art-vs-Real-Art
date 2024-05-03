@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'tip2_2.js') }}"></script>
+
+<div class="row" id="page-title">
+    <div class="col-12">
+      <div class="lesson-main-title">AI art is procedural</div>
+        <h4>Most AI generated art contains little to no <b>brush strokes</b>. In real art, the brush strokes are apparent, and artists make sure to <b>vary</b> these strokes.
+        </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center">
+        <h4>AI-Generated</h4>
+        <img src="{{url_for('static', filename='lincoln/ai_lincoln.png')}}" alt="ai lincoln">
+    </div>
+    <div class="col-6 text-center">
+        <h4>Real</h4>
+        <img src="{{url_for('static', filename='lincoln/lincoln.png')}}" alt="lincoln">
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/annotated_tip2_1"><button class="prev-lesson-button">Previous</button></a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/tips/annotated_tip2_2"><button class="next-lesson-button">Next</button></a>
+      </div>
+    </div>
+{% endblock %}

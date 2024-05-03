@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename = 'red_tip1.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'red_tip1_2.js') }}"></script>
 
 <div class="row" id="page-title">
     <div class="col-12">
@@ -13,22 +13,22 @@
 <div class="row">
     <div class="col-6 text-center image-container">
       <h4>AI-Generated</h4>
-        <img id="img1" src="{{url_for('static', filename='starry_night/red_ai_starry_night.png')}}" alt="ai starry night annotated">
+        <img id="img1" src="{{url_for('static', filename='girls/red_ai_girls.png')}}" alt="ai three girls annotated">
         <div id="zoom-result1" class="img-zoom-result" style="position: absolute;"></div>
     </div>
     <div class="col-6 text-center image-container">
         <h4>Real</h4>
-        <img id="img2" src="{{url_for('static', filename='starry_night/red_starry_night.png')}}" alt="starry night annotated">
+        <img id="img2" src="{{url_for('static', filename='girls/red_girls.png')}}" alt="three girls annotated">
         <div id="zoom-result2" class="img-zoom-result" style="position: absolute;"></div>
     </div>
 </div>
 
     <div class="row">
       <div class="col-6 text-left">
-        <a href="/tips/1"><button class="prev-lesson-button">Previous</button></a>
+        <a href="/tips/1_2"><button class="prev-lesson-button">Previous</button></a>
       </div>
       <div class="col-6 text-right">
-        <a href="/tips/2"><button class="next-lesson-button">Next</button></a>
+        <a href="/tips/2_1"><button class="next-lesson-button">Next</button></a>
       </div>
     </div>
 {% endblock %}

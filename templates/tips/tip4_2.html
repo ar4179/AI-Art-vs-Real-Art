@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'tip4_2.js') }}"></script>
+
+<div class="row" id="page-title">
+    <div class="col-12">
+      <div class="lesson-main-title">AI art lacks emotion</div>
+        <h4>Even when you tell an AI to generate its “most emotional image”, the image provided seems <b>shallow and mechanical</b>, as if a robot is trying to replicate emotion. Real art evokes true emotion in the viewer.</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center">
+      <h4>AI-Generated</h4>
+        <img src="{{url_for('static', filename='emotion2/ai_emotion2.png')}}" alt="ai emotion">
+    </div>
+    <div class="col-6 text-center">
+        <h4>Real</h4>
+        <img src="{{url_for('static', filename='emotion2/emotion2.png')}}" alt="emotion">
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/annotated_tip4_1"><button class="prev-lesson-button">Previous</button></a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/tips/annotated_tip4_2"><button class="next-lesson-button">Next</button></a>
+      </div>
+    </div>
+{% endblock %}

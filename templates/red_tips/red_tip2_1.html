@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'red_tip2_1.js') }}"></script>
+
+<div class="row" id="page-title">
+    <div class="col-12">
+      <div class="lesson-main-title">AI art is procedural
+      </div>
+      <h4>Most AI generated art contains little to no <b>brush strokes</b>. In real art, the brush strokes are apparent, and artists make sure to <b>vary</b> these strokes.
+      </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center image-container">
+        <h4>AI-Generated</h4>
+        <img id="img1" src="{{url_for('static', filename='mountains/red_ai_mountains.png')}}" alt="ai mountains annotated">
+        <div id="zoom-result1" class="img-zoom-result" style="position: absolute;"></div>
+    </div>
+    <div class="col-6 text-center image-container">
+        <h4>Real</h4>
+        <img id="img2" src="{{url_for('static', filename='mountains/red_mountains.png')}}" alt="mountains annotated">
+        <div id="zoom-result2" class="img-zoom-result" style="position: absolute;"></div>
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/2_1"><button class="prev-lesson-button">Previous</button></a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/tips/2_2"><button class="next-lesson-button">Next</button></a>
+      </div>
+    </div>
+{% endblock %}

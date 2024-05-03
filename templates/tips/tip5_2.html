@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'tip5_2.js') }}"></script>
+
+<div class="row" id="page-title">
+    <div class="col-12">
+      <div class="lesson-main-title">AI art has no background information</div>
+        <h4>Real art always has background information about who the artist is and their intent behind the work. They will also sometimes leave a <b>signature</b>. If you are unsure if a painting is real or AI generated, it is always important to do research.
+        </h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 text-center">
+      <h4>AI-Generated</h4>
+        <img src="{{url_for('static', filename='still-life/ai_still-life.png')}}" alt="ai painting with no signature">
+    </div>
+    <div class="col-6 text-center">
+        <h4>Real</h4>
+        <img src="{{url_for('static', filename='still-life/still-life.png')}}" alt="real painting that has a signature">
+    </div>
+</div>
+
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="/tips/5_1"><button class="prev-lesson-button">Previous</button></a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/quiz/start"><button class="next-lesson-button">Quiz</button></a>
+      </div>
+    </div>
+{% endblock %}
