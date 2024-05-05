@@ -165,6 +165,7 @@ def incorrect_quiz(number=None):
 def increment_score():
     global quiz_score
     quiz_score += 1
+    return str(quiz_score)
 
 if __name__ == '__main__':
    app.run(debug = True, port=4444)
