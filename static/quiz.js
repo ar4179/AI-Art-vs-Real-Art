@@ -55,5 +55,4 @@ $(document).ready(function () {
     });
 
     imageZoom("img1", "zoom-result1");
-    imageZoom("img2", "zoom-result2");
 })
